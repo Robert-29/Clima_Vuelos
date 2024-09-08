@@ -13,6 +13,8 @@ export const fetchClimaData = async () => {
 
       const data = await response.json();
 
+      console.log(data)
+
       return {
         temp: data.main.temp,
         description: data.weather[0].description,
