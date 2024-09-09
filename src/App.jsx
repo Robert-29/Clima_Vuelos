@@ -3,6 +3,7 @@ import { Clima } from "./components/Clima";
 import { DiasClima } from "./components/DiasClima";
 // import Grafico from "./components/Grafico";
 import { MiClima } from "./components/MiClima";
+import {Grafico} from "./components/Grafico";
 import Spline from '@splinetool/react-spline';
 // import { miUbicacionClima } from "./apis/miUbicaciónClima";
 
@@ -18,6 +19,7 @@ function App() {
           <Clima />
         </section>
         <DiasClima />
+        <Grafico/>
       </div>
     </main>
   );

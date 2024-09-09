@@ -15,7 +15,6 @@ export const fetchDiasData = async () => {
         console.log(data)
 
         //Temperatura
-        
         const media1 = [data.list[2].main.temp, data.list[5].main.temp, data.list[7].main.temp];
         const suma = media1.reduce((acc, curr) => acc + curr, 0);
         const media = suma / media1.length;
@@ -65,15 +64,6 @@ export const fetchDiasData = async () => {
         const visibilidad3 = data.list[21].visibility
         const visibilidad4 = data.list[29].visibility
         const visibilidad5 = data.list[37].visibility
-
-        switch (presipitacion) {
-            case presipitacion == 1:
-                
-                break;
-        
-            default:
-                break;
-        }
 
         return {
             dia: data.list, 
